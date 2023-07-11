@@ -8,13 +8,13 @@ import Auth from '../../utils/auth';
 import { useStoreContext } from '../../utils/GlobalState';
 import { TOGGLE_CART, ADD_MULTIPLE_TO_CART } from '../../utils/actions';
 import './style.css';
-
+//Griffin Wojtowicz performed the refactoring.
 const stripePromise = loadStripe('pk_test_TYooMQauvdEDq54NiTphI7jx');
-
+//Griffin Wojtowicz performed the refactoring.
 const Cart = () => {
   const [state, dispatch] = useStoreContext();
   const [getCheckout, { data }] = useLazyQuery(QUERY_CHECKOUT);
-
+//Griffin Wojtowicz performed the refactoring.
   useEffect(() => {
     if (data) {
       stripePromise.then((res) => {
@@ -22,13 +22,13 @@ const Cart = () => {
       });
     }
   }, [data]);
-
+//Griffin Wojtowicz performed the refactoring.
   useEffect(() => {
     async function getCart() {
       const cart = await idbPromise('cart', 'get');
       dispatch({ type: ADD_MULTIPLE_TO_CART, products: [...cart] });
     }
-
+//Griffin Wojtowicz performed the refactoring.
     if (!state.cart.length) {
       getCart();
     }

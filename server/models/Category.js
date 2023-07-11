@@ -11,5 +11,6 @@ const categorySchema = new Schema({
 });
  //refactored by Griffin Wojtowicz
 const Category = mongoose.model('Category', categorySchema);
-
+//Griffin Wojtowicz performed the refactoring.
 module.exports = Category;
+//Griffin Wojtowicz performed the refactoring.

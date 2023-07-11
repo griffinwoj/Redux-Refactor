@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 const { Schema } = mongoose;
-
+//Griffin Wojtowicz performed the refactoring.
 const productSchema = new Schema({
   name: {
     type: String,
@@ -30,7 +30,7 @@ const productSchema = new Schema({
     required: true
   }
 });
-
+//Griffin Wojtowicz performed the refactoring.
 const Product = mongoose.model('Product', productSchema);
 
 module.exports = Product;

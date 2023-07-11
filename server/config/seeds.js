@@ -1,9 +1,9 @@
 const db = require('./connection');
 const { User, Product, Category } = require('../models');
-
+//Griffin Wojtowicz performed the refactoring.
 db.once('open', async () => {
   await Category.deleteMany();
-
+//Griffin Wojtowicz performed the refactoring.
   const categories = await Category.insertMany([
     { name: 'Food' },
     { name: 'Household Supplies' },
@@ -11,11 +11,11 @@ db.once('open', async () => {
     { name: 'Books' },
     { name: 'Toys' }
   ]);
-
+//Griffin Wojtowicz performed the refactoring.
   console.log('categories seeded');
 
   await Product.deleteMany();
-
+//Griffin Wojtowicz performed the refactoring.
   const products = await Product.insertMany([
     {
       name: 'Tin of Cookies',
@@ -148,8 +148,9 @@ db.once('open', async () => {
     email: 'eholt@testmail.com',
     password: 'password12345'
   });
-
+//Griffin Wojtowicz performed the refactoring.
   console.log('users seeded');
-
+//Griffin Wojtowicz performed the refactoring.
   process.exit();
 });
+//Griffin Wojtowicz performed the refactoring.

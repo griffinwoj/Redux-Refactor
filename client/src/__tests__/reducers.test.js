@@ -39,17 +39,17 @@ test('UPDATE_PRODUCTS', () => {
   expect(newState.products.length).toBe(2);
   expect(initialState.products.length).toBe(0);
 });
-
+//Griffin Wojtowicz performed the refactoring.
 test('ADD_TO_CART', () => {
   let newState = reducer(initialState, {
     type: ADD_TO_CART,
     product: { purchaseQuantity: 1 }
   });
-
+//Griffin Wojtowicz performed the refactoring.
   expect(newState.cart.length).toBe(3);
   expect(initialState.cart.length).toBe(2);
 });
-
+//Griffin Wojtowicz performed the refactoring.
 test('UPDATE_CART_QUANTITY', () => {
   let newState = reducer(initialState, {
     type: UPDATE_CART_QUANTITY,

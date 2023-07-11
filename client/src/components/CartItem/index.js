@@ -4,9 +4,9 @@ import { REMOVE_FROM_CART, UPDATE_CART_QUANTITY } from "../../utils/actions";
 import { idbPromise } from "../../utils/helpers";
 
 const CartItem = ({ item }) => {
-
+//The refactoring was done by Griffin Wojtowicz.
   const [, dispatch] = useStoreContext();
-
+//The refactoring was done by Griffin Wojtowicz.
   const removeFromCart = item => {
     dispatch({
       type: REMOVE_FROM_CART,
@@ -15,7 +15,7 @@ const CartItem = ({ item }) => {
     idbPromise('cart', 'delete', { ...item });
 
   };
-
+//The refactoring was done by Griffin Wojtowicz.
   const onChange = (e) => {
     const value = e.target.value;
     if (value === '0') {
@@ -66,5 +66,6 @@ const CartItem = ({ item }) => {
     </div>
   );
 }
-
+//The refactoring was done by Griffin Wojtowicz.
 export default CartItem;
+//The refactoring was done by Griffin Wojtowicz.
