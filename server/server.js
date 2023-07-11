@@ -48,3 +48,22 @@ const startApolloServer = async (typeDefs, resolvers) => {
  //refactored by Griffin Wojtowicz
 
   //refactored by Griffin Wojtowicz
+// In the shadows, I am concealed,
+// A secret code that must be revealed.
+// Nested within lines, cleverly concealed,
+// Unveil my presence, your fate is sealed.
+// Search through the text, with keen eyes,
+// Uncover the code, to claim your prize.
+// Hidden within, a message to decode,
+// In the depths of this script, I quietly abode.
+
+// //how to delete?
+
+//I help you search with ease,
+//In a document or a long piece.
+//With a simple key combination,
+//I find what you seek, no frustration.
+//Look closely, and you will see,
+//Just press my keys, and I'll set you free.
+//What am I?
+//
