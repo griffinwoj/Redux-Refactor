@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 const { Schema } = mongoose;
-
+ //refactored by Griffin Wojtowicz
 const categorySchema = new Schema({
   name: {
     type: String,
@@ -9,7 +9,7 @@ const categorySchema = new Schema({
     trim: true
   }
 });
-
+ //refactored by Griffin Wojtowicz
 const Category = mongoose.model('Category', categorySchema);
 
 module.exports = Category;

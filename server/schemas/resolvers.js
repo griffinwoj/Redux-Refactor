@@ -20,7 +20,7 @@ const resolvers = {
           $regex: name
         };
       }
-
+ //refactored by Griffin Wojtowicz
       return await Product.find(params).populate('category');
     },
     product: async (parent, { _id }) => {
@@ -46,7 +46,7 @@ const resolvers = {
           path: 'orders.products',
           populate: 'category'
         });
-
+ //refactored by Griffin Wojtowicz
         return user.orders.id(_id);
       }
 
@@ -65,7 +65,7 @@ const resolvers = {
           description: products[i].description,
           images: [`${url}/images/${products[i].image}`]
         });
-
+ //refactored by Griffin Wojtowicz
         const price = await stripe.prices.create({
           product: product.id,
           unit_amount: products[i].price * 100,
@@ -77,7 +77,7 @@ const resolvers = {
           quantity: 1
         });
       }
-
+ //refactored by Griffin Wojtowicz
       const session = await stripe.checkout.sessions.create({
         payment_method_types: ['card'],
         line_items,

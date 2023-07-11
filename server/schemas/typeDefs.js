@@ -56,5 +56,6 @@ const typeDefs = gql`
     login(email: String!, password: String!): Auth
   }
 `;
-
+ //refactored by Griffin Wojtowicz
 module.exports = typeDefs;
+ //refactored by Griffin Wojtowicz
