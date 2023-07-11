@@ -1,6 +1,6 @@
 # redux-store
-
 E-commerce Platform Refactored Criteria
+
 ## Overview
 This README document provides an overview of the refactored criteria for an e-commerce platform that uses Redux to manage global state. The refactoring involves replacing the existing Redux implementation with the Context API. This README outlines the key changes made to the application, focusing on the areas of store management, accessing the store, determining state changes, extracting state data, and dispatching actions.
 
@@ -25,10 +25,6 @@ Components can access the dispatch function provided by the Context provider to 
 ## Conclusion
 The refactored e-commerce platform successfully replaces Redux with the Context API for managing global state. The changes outlined in this README demonstrate the migration from Redux to a simpler and more lightweight state management solution. By leveraging the Context API, the application benefits from a streamlined approach to store management, state access, change detection, data extraction, and action dispatching.
 
-
-```md
- - npm i apollo-server-express
-  - npm i graphql
-  - npm i @apollo/client
-  - npm i @apollo/react-hooks
-  ```
+## License
+This project is licensed under the MIT license. Source code provided by edX.
+``` 
